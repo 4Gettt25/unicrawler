@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elasticsearch Search</title>
+</head>
+<body>
+    <h1>Elasticsearch Search</h1>
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Enter search query">
+        <button type="submit">Search</button>
+    </form>
+    <div id="results"></div>
+    <script src="{% static 'frontend/search.js' %}"></script>
+</body>
+</html>

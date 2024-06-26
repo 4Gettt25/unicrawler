@@ -48,6 +48,9 @@ class Account(AbstractBaseUser):
     def has_perm(self, perm, obj=None):
         return self.is_admin
 
+    def __str__(self):
+        return self.email
+
 
 class FileInformation(models.Model):
     subject = models.CharField(max_length=200)

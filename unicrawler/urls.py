@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from crawler import views
+from frontend import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('crawler/', include('crawler.urls')),
-    path('', views.download_files, name='home'),  # new line
+    path('', include('frontend.urls')),
 ]
